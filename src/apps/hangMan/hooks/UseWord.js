@@ -33,7 +33,7 @@ export const UseWord = () => {
             let newListWord1 = listWord.filter(estado => estado.status === true);
             let newListWord2 = listWord.filter(item => item.letter !== " ");
             if (newListWord1.length === newListWord2.length){
-                if(!alert('YOU WIN')){window.location.reload();}
+                if(!alert('CONGRATULATIONS!')){window.location.reload();}
                 break;
                 
             };
