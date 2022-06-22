@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export const UseWord = () => {
-    const list = ["Manzana", "Iglesia", "Santa Cruz", "Bioquimica", "Matematicas", "La Paz", "Karaoke", "The Rolling Stones"];
+    const list = ["Durazno", "Bloque", "Universidad", "Medicina", "Matematicas", "Seminario", "Karaoke", "Sistemas"];
     const words = list[Math.floor(Math.random() * list.length)];
     
     const listLetters = words.split("").map((item, index) => {
@@ -33,7 +33,7 @@ export const UseWord = () => {
             let newListWord1 = listWord.filter(estado => estado.status === true);
             let newListWord2 = listWord.filter(item => item.letter !== " ");
             if (newListWord1.length === newListWord2.length){
-                if(!alert('CONGRATULATIONS!')){window.location.reload();}
+                if(!alert('Ganaste!')){window.location.reload();}
                 break;
                 
             };
